@@ -84,6 +84,11 @@ img{
     height: 25px;
     opacity: 0;
 }
+@media(max-width:600px){
+    img {
+        opacity: 1;
+    }
+}
 .done{
     background-color:#8fac55 ;
 }

@@ -27,17 +27,14 @@ function mostrarTarefas(){
 
     localStorage.setItem('Lista', JSON.stringify(minhaLista))
 }
-
 function deletarItem(posicao){
     minhaLista.splice(posicao,1)
     mostrarTarefas()
 }
-
 function concluirTarefa(posicao){
     minhaLista[posicao].concluida = !minhaLista[posicao].concluida
     mostrarTarefas()
 }
-
 function recarregarTarefas(){
     const tarefasDoLocalStorage = localStorage.getItem('Lista')
     if(tarefasDoLocalStorage){
