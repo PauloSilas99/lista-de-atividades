@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+body{
+    background: url("img/background.png");
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+    color: #098c72;
+}
+.container{
+    background-color: #d1d1d1;
+    width: 500px;
+    border-radius:10px;
+    padding: 20px;
+    margin: 50px auto;
+}
+@media(max-width:600px){
+    .container{
+        width: 80%;
+    }
+    h1{
+        font-size: 25px;
+    }
+}
+.input-task{
+    border-radius: 5px;
+    border:none;
+    width: 300px;
+    height: 35px;
+    padding-left: 10px;
+}
+@media(max-width:600px){
+    .input-task{
+        width:180px
+    }
+}
+
+.button-add-task{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background: #003329;
+    color: #fff;
+    font-size: 15px;
+    float: right;
+    cursor: pointer;
+}
+@media(max-width:600px){
+    .button-add-task{
+        padding: 8px 12px;
+    }
+}
+.button-add-task:hover{
+    background: #056955;
+}
+.list-tasks{
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+}
+.task{
+    background-color: #f2f2f2;
+    box-shadow: 1px 4px 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.task:hover img{
+    opacity:1;
+    transition: opacity 0.5s ease-in-out;
+}
+img{
+    height: 25px;
+    opacity: 0;
+}
+.done{
+    background-color:#8fac55 ;
+}
